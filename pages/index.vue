@@ -4,10 +4,52 @@
     justify-center
     align-center
   >
+
+    <v-container fluid>
+      <v-row dense>
+        <v-col>
+          <v-card>
+          <v-card-title class="mushroom-tracker">
+          Mushroom Tracker
+        </v-card-title>
+          <v-img
+              :src="require('@/assets/images/mushrooms.jpg')"
+              gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+              title="Mushroom Tracker"
+              width="550"
+            >
+            </v-img>
+            <v-card-actions>
+              <v-spacer></v-spacer>
+              
+            </v-card-actions>
+          </v-card>
+        </v-col>
+                <v-col>
+          <v-card>
+          <v-card-title class="mushroom-tracker">
+          Mushroom Tracker
+        </v-card-title>
+          <v-img
+              :src="require('@/assets/images/mushrooms.jpg')"
+              gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+              title="Mushroom Tracker"
+              width="550px"
+            >
+            </v-img>
+            <v-card-actions>
+              <v-spacer></v-spacer>
+              
+            </v-card-actions>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+
     <v-flex
       xs12
       sm8
-      md6
+      md3
     >
       <div class="text-center">
         <logo />
@@ -90,3 +132,27 @@ export default {
   }
 }
 </script>
+
+<style>
+
+  #main {
+    color: green;
+    font-size:32px;
+    width:50vw;
+  }
+
+  .table-overflow {
+    max-height: 65vh;
+    overflow-y:scroll;
+    clear: both;
+  }
+
+  #delivery-hold-queue-table {
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+</style>
